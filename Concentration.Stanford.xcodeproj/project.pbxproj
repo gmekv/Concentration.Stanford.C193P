@@ -10,9 +10,12 @@
 		52ECE12629F993C2006BBC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE12529F993C2006BBC04 /* AppDelegate.swift */; };
 		52ECE12829F993C2006BBC04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE12729F993C2006BBC04 /* SceneDelegate.swift */; };
 		52ECE12A29F993C2006BBC04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE12929F993C2006BBC04 /* ViewController.swift */; };
-		52ECE12D29F993C2006BBC04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECE12B29F993C2006BBC04 /* Main.storyboard */; };
 		52ECE12F29F993C4006BBC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ECE12E29F993C4006BBC04 /* Assets.xcassets */; };
 		52ECE13229F993C4006BBC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECE13029F993C4006BBC04 /* LaunchScreen.storyboard */; };
+		52ECE13B29F9AA7F006BBC04 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE13A29F9AA7F006BBC04 /* Card.swift */; };
+		52ECE13D29F9AA9F006BBC04 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE13C29F9AA9F006BBC04 /* Concentration.swift */; };
+		52ECE14329F9AC44006BBC04 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECE14229F9AC44006BBC04 /* Theme.swift */; };
+		52ECE14629F9AFED006BBC04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECE14429F9AFED006BBC04 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		52ECE12529F993C2006BBC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52ECE12729F993C2006BBC04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52ECE12929F993C2006BBC04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52ECE12C29F993C2006BBC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52ECE12E29F993C4006BBC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52ECE13129F993C4006BBC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52ECE13329F993C4006BBC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ECE13A29F9AA7F006BBC04 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		52ECE13C29F9AA9F006BBC04 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		52ECE14229F9AC44006BBC04 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		52ECE14529F9AFED006BBC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../../Documents/d/Concentration/View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				52ECE12529F993C2006BBC04 /* AppDelegate.swift */,
+				52ECE13929F9AA73006BBC04 /* Model */,
 				52ECE12729F993C2006BBC04 /* SceneDelegate.swift */,
-				52ECE12929F993C2006BBC04 /* ViewController.swift */,
-				52ECE12B29F993C2006BBC04 /* Main.storyboard */,
+				52ECE14129F9AC33006BBC04 /* View */,
 				52ECE12E29F993C4006BBC04 /* Assets.xcassets */,
 				52ECE13029F993C4006BBC04 /* LaunchScreen.storyboard */,
 				52ECE13329F993C4006BBC04 /* Info.plist */,
 			);
 			path = Concentration.Stanford;
+			sourceTree = "<group>";
+		};
+		52ECE13929F9AA73006BBC04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52ECE13A29F9AA7F006BBC04 /* Card.swift */,
+				52ECE13C29F9AA9F006BBC04 /* Concentration.swift */,
+				52ECE13E29F9ABFD006BBC04 /* Controller */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52ECE13E29F9ABFD006BBC04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52ECE12929F993C2006BBC04 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52ECE14129F9AC33006BBC04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52ECE14429F9AFED006BBC04 /* Main.storyboard */,
+				52ECE14229F9AC44006BBC04 /* Theme.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +160,7 @@
 			files = (
 				52ECE13229F993C4006BBC04 /* LaunchScreen.storyboard in Resources */,
 				52ECE12F29F993C4006BBC04 /* Assets.xcassets in Resources */,
-				52ECE12D29F993C2006BBC04 /* Main.storyboard in Resources */,
+				52ECE14629F9AFED006BBC04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,28 +172,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				52ECE12A29F993C2006BBC04 /* ViewController.swift in Sources */,
+				52ECE13D29F9AA9F006BBC04 /* Concentration.swift in Sources */,
 				52ECE12629F993C2006BBC04 /* AppDelegate.swift in Sources */,
 				52ECE12829F993C2006BBC04 /* SceneDelegate.swift in Sources */,
+				52ECE13B29F9AA7F006BBC04 /* Card.swift in Sources */,
+				52ECE14329F9AC44006BBC04 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52ECE12B29F993C2006BBC04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52ECE12C29F993C2006BBC04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52ECE13029F993C4006BBC04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				52ECE13129F993C4006BBC04 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52ECE14429F9AFED006BBC04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ECE14529F9AFED006BBC04 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
